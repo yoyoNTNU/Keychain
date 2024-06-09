@@ -1,12 +1,12 @@
-from flask import Blueprint
+from flask import Blueprint, request, jsonify
 auth_routes = Blueprint('auth', __name__)
 
 @auth_routes.route('/register', methods=['POST'])
 def register():
     print("register")
-    pass
+    return jsonify({'message': 'register successfully'})
 
 @auth_routes.route('/login', methods=['POST'])
 def login():
     print("login")
-    pass
+    return jsonify({'message': 'login successfully'})
