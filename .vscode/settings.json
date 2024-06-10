@@ -4,6 +4,7 @@
         "jsonify",
         "keychain",
         "onupdate",
-        "pytz"
+        "pytz",
+        "werkzeug"
     ]
 }
